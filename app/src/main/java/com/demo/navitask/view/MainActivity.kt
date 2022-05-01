@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                             showEmpty()
                         else {
                             binding.rvList.isVisible = true
-                            pullRequestAdapter.updatePullRequestList(it.plus(it).plus(it).plus(it))
+                            pullRequestAdapter.updatePullRequestList(it)
                         }
                     }
                 }

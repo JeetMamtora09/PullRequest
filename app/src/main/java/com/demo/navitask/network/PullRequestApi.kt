@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface PullRequestApi {
 
-    @GET("repos/prakashshuklahub/Pull-Request-GithubApi-Demo-App/pulls?state=closed")
+    @GET("repos/JeetMamtora09/TodoMaster/pulls?state=closed")
     suspend fun getAllPullRequest(): List<PullResponse>
 
 }

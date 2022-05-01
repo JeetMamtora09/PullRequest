@@ -4,7 +4,7 @@ import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 
-fun getAbbreviatedFromDateTime(dateTime: String, dateFormat: String = "yyyy-mm-dd", field: String="dd/mm/yyyy"): String? {
+fun getAbbreviatedFromDateTime(dateTime: String, dateFormat: String = "yyyy-mm-dd", field: String="MMM dd yyyy"): String? {
     val input = SimpleDateFormat(dateFormat, Locale.ENGLISH)
     val output = SimpleDateFormat(field,Locale.ENGLISH)
     try {

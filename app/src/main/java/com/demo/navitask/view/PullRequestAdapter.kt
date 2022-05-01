@@ -49,7 +49,7 @@ class PullRequestAdapter(private var pullRequest: ArrayList<PullResponse>) :
                     }
                 }
                 pullRequest.user?.name?.let {
-                    txtUserName.text = "User Name : $it"
+                    txtUserName.text = it
                 }
                 pullRequest.user?.avatarUrl?.let {
                     imgUser.loadImage(it, progressDrawable)
